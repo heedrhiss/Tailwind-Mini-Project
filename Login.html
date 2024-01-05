@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.tailwindcss.com"></script>
+    <title>Login Modal</title>
+</head>
+<body>
+<div class="bg-rose-50 flex justify-center items-center min-h-screen">
+<div class="relative bg-white flex flex-col m-6 rounded-xl shadow-xl md:flex-row">
+    <!-- Login Container -->
+    <div class="flex flex-col px-8 py-1 md:p-18 space-y-7 mb-3">
+        <div class="absolute top-8 right-5 p-1 cursor-pointer rounded-full w-8 h-8 flex items-center justify-center border bg-slate-200 border-black">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+    <h1 class="font-mono text-4xl font-bold mb-3">Log In</h1>
+    <p class="max-w-sm font-sans font-light text-gray-600">Log in to your account to upload or download pictures, videos or music.</p>
+    <input type="text" placeholder="Enter your Email Address" class="px-5 py-5 border border-slate-400 placeholder:text-gray-400 rounded-md">
+    <div class="flex flex-col justify-between space-y-4 items-center md:flex-row md:space-y-0">
+        <p class="text-gray-400 text-md">Forgot Password</p>
+        <button class="flex bg-cyan-700 justify-center items-center w-full space-x-2 text-white text-center px-8 py-5 rounded-md md:w-32 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:bg-cyan-200">
+            <div>Next</div> <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-7" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="13" y1="18" x2="19" y2="12" />
+            <line x1="13" y1="6" x2="19" y2="12" />
+          </svg>
+        </button>
+    </div>    
+    <div class="border-b border-gray-300 "></div>
+    <p class="text-sm text-gray-400 text-center leading-tight">or log in with</p>
+
+    <div class="flex flex-col justify-center items-center md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+      <button class="flex border border-gray-400 w-full rounded-sm hover:shadow-xl hover:-translate-y-1 duration-200 space-x-3 justify-center items-center px-5 py-2">
+        <img src="./images/facebook.png" class="w-8">
+        <span class="text-md text-gray-400">Facebook</span>
+      </button>
+      <button class="flex border border-gray-400 w-full rounded-sm hover:shadow-xl hover:-translate-y-1 duration-200 space-x-3 justify-center items-center px-5 py-2">
+        <img src="./images/google.png" class="w-8">
+        <span class="text-md text-gray-400">Google</span>
+      </button>
+    </div>
+</div>
+
+
+    <!-- Background Container -->
+    <div class="hidden md:block">
+      <img src="./images/bg image.jpg" alt="" class="h-auto w-80">
+    </div>
+</div>
+</div>
+</body>
+</html>
